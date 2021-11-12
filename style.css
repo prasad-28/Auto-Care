@@ -53,19 +53,18 @@
   position: absolute;
   top: 15px;
 }
-.social-icons ul{
-    list-style-type: none;
-    display: flex;
-
+.icon-links a{
+    text-decoration: none;
+    padding: 0 8px;
+    color: white;
+    font-size: 15px;
 }
-.social-icons ul li{
+/* .icon-links ul li{
   padding: 0 5px;
-}
-.social-icons ul:nth-child(4){
+} */
+/* .icon-links a:nth-child(4){
   padding: 0px;
-  color: red;
-  background-color: lime;
-}
+} */
 .main-logo-nav{
   height: 100px;
   margin: 3px auto auto;
@@ -87,6 +86,7 @@
   position: relative;
   display: inline-block;
   height: 30px;
+  margin-top: 10px;
 }
 .nav-drop a{
   text-decoration: none;
@@ -100,7 +100,7 @@
     top: 30px;
     left: 10px;
     background-color: white;
-    width: 180px;
+    width: 175px;
     list-style-type: none;
     border-top: 2px solid #ba0913;
     /* padding: 10px; */
@@ -121,6 +121,9 @@
     border: 0px;
     margin-left: 40px;
 }
+.about-outer{
+  position:relative;
+}
 .nav-drop:hover .drop-list{
   display: block;
 }
@@ -134,9 +137,6 @@
   background-color: #d3d3d326;
   color: #ba0913;
 }
-/* .active{
-  color: #ba0913;
-} */
 .na-btn-decor{
       display: none;
       width: 20px;
@@ -169,43 +169,105 @@
 .nav-drop:hover .na-btn-decor{
   display: block;
 }
-.scale-in-ver-bottom {
-	-webkit-animation: scale-in-ver-top 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: scale-in-ver-top 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+.fade-in-bottom {
+	-webkit-animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
-@-webkit-keyframes scale-in-ver-bottom {
+.inner-data{
+  height: 400px;
+  margin: auto;
+  color:white;
+  justify-content: center;
+  flex-direction:column;
+}
+.btn-know{
+    padding: 15px 35px;
+    background-color: black;
+    color: white;
+    outline: none;
+    border: 0px;
+    margin: 20px 10px;
+    cursor: pointer;
+    transition: all 1s;
+}
+.btn-Shop{
+  padding: 15px 35px;
+  background-color: #ba0913;
+  color: white;
+  outline: none;
+  border: 0px;
+  margin: 20px 10px;
+  cursor: pointer;
+  transition: all 1s;
+}
+.sprs-line{
+  width: 80px;
+  height: 1px;
+  background-color: white;
+  margin: 0 7px;
+}
+.btn-know:hover{
+  background-color: #ba0913;
+}
+.btn-Shop:hover{
+  background-color: black;
+}
+
+ @media all and (max-width: 1150px){
+   .top-section,.top-heading,.main-logo-nav{
+     width: 100%;
+   }
+   .logo-car{
+     padding-left: 10px;
+   }
+   .nav-head{
+     padding-right: 10px;
+   }
+ }
+
+ @media all and (max-width: 768px){
+   .top-heading{
+     display: none;
+   }
+ }
+
+.slide-left {
+	-webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-left {
   0% {
-    -webkit-transform: scaleY(0);
-            transform: scaleY(0);
-    -webkit-transform-origin: 0% 100%;
-            transform-origin: 0% 100%;
-    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(25px);
   }
   100% {
-    -webkit-transform: scaleY(1);
-            transform: scaleY(1);
-    -webkit-transform-origin: 0% 100%;
-            transform-origin: 0% 100%;
-    opacity: 1;
-  }
-}
-@keyframes scale-in-ver-bottom {
-  0% {
-    -webkit-transform: scaleY(0);
-            transform: scaleY(0);
-    -webkit-transform-origin: 0% 100%;
-            transform-origin: 0% 100%;
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: scaleY(1);
-            transform: scaleY(1);
-    -webkit-transform-origin: 0% 100%;
-            transform-origin: 0% 100%;
-    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 
-.about-outer{
-  position:relative;
+@-webkit-keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
 }
