@@ -225,6 +225,90 @@
    }
  }
 
+ /* .div-design{
+   height: 300px; */
+
+.div-appointment{
+  width: 100%;
+  background-color: #ba0913;
+  height: 90px;
+  /* position: relative; */
+}
+
+ .div-appointment button{
+   /* padding: 15px 15px;
+   background-color: #ba0913;
+   outline: none;
+   color: white;
+   border: 0px; */
+    padding: 15px;
+    color: #ba0913;
+    background-color: white;
+    border: 0px;
+    outline: none;
+    transition: all 0.5s;
+ }
+ .inner-appoin{
+    width: 950px;
+    height: 150px;
+    justify-content: space-evenly;
+    margin: auto;
+    background-color: #ba0913;
+    color: white;
+    position: relative;
+ }
+ /* .inner-appoin::before{
+    content: '';
+    position: absolute;
+    height: 61px;
+    width: 70px;
+    left: -27px;
+    background-color: #ba0913;
+    bottom: 14px;
+    transform: rotate(62deg);
+ }
+ .inner-appoin::after{
+   content: '';
+   position: absolute;
+   height: 61px;
+   width: 70px;
+   right: -30px;
+   background-color: #ba0913;
+   bottom: 18px;
+   transform: rotate(124deg);
+ } */
+
+.left-skew{
+    content: '';
+    position: absolute;
+    width: 373px;
+    height: 61px;
+    transform: skewX(32deg);
+    background-color: white;
+    bottom: -463px;
+    left: -68px;
+
+}
+.right-skew{
+  content: '';
+  position: absolute;
+  width: 373px;
+  height: 61px;
+  transform: skewX(-32deg);
+  background-color: white;
+  bottom: -463px;
+  right: -68px;
+}
+.inner-appoin button:hover{
+  border-radius: 25px;
+  color: black;
+  border: 2px solid black;
+  outline: none;
+}
+.quality-section{
+  height: 700px;
+  /* background-color: tomato; */
+}
  @media all and (max-width: 768px){
    .top-heading{
      display: none;
