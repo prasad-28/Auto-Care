@@ -1,5 +1,6 @@
-// $ (document).ready(function(){
-//   $(".nav-drop").hover(function(){
-//     $(".drop-list").show();
-//   });
-// });
+$ (document).ready(function(){
+  $(".data-card").hover(function(){
+    $(".overlay-data").slideUp();
+    
+  });
+});
