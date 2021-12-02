@@ -127,7 +127,8 @@
 	width: 175px;
 	list-style-type: none;
 	border-top: 2px solid #ba0913;
-    /* padding: 10px; */;
+    /* padding: 10px; */
+	;
 }
 
 .drop-list li {
@@ -279,7 +280,7 @@
 	background-color: #ba0913;
 	/* height: 90px; */
 	position: relative;
-  overflow: hidden;
+	overflow: hidden;
 }
 
 .div-appointment button {
@@ -357,7 +358,8 @@
 
 .quality-section {
   /* height: 900px; */
-  /* background-color: tomato;  */;
+  /* background-color: tomato;  */
+	;
 }
 
 .inner-qty {
@@ -383,7 +385,8 @@
 } */
 .qty-slider {
 	width: 500px;
-  /* height: 600px; */;
+  /* height: 600px; */
+	;
 }
 
 .qty-data h2 {
@@ -489,7 +492,7 @@
 	height: 750px;
 	background-color: #f6f6f6;
 	color: #797979;
-  overflow: hidden;
+	overflow: hidden;
 }
 
 .skew-section {
@@ -523,7 +526,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-  height: 110px;
+	height: 110px;
 }
 
 .h1-tag span {
@@ -534,94 +537,112 @@
 .decor-dot .sprs-line {
 	background-color: darkgray;
 }
-.data-card{
-  width: 390px;
-  /* height: 500px;
-  border: 1px solid; */
-  margin: auto;
+
+.data-card {
+	width: 390px;
+	margin: 0 10px;
 }
 
-.car-repair-img img{
-  width: 100%;
-  height: 390px;
-  background-position: center;
-  background-size: contain;
+.outer-slide-up {
+	margin: auto;
 }
-.img-card{
-		align-items: center;
-    justify-content: space-between;
-    height: 70px;
-		background-color: white;
+
+.car-repair-img img {
+	width: 100%;
+	height: 390px;
+	background-position: center;
+	background-size: contain;
 }
-.img-card span{
-		width: 78px;
-    height: inherit;
-    color: white;
-    background-color: #ba0913;
+
+.img-card {
+	align-items: center;
+	justify-content: space-between;
+	height: 70px;
+	background-color: white;
+}
+
+.img-card span {
+	width: 78px;
+	height: inherit;
+	color: white;
+	background-color: #ba0913;
     /* margin: auto; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 27px;
-}
-.lifeguard-img{
-		width: 70px;
-    height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: right;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 27px;
 }
 
-.lifeguard-img img{
+.lifeguard-img {
+	width: 70px;
+	height: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: right;
+}
+
+.lifeguard-img img {
 	width: 40px;
 	height: 40px;
 	background-size: cover;
 }
-.overlay-icon-img{
+
+.overlay-icon-img {
 	width: 80px;
 	height: 138px;
 	display: flex;
 	justify-content: center;
 	border-right: 1px solid gray;
 }
-.overlay-img img{
+
+.overlay-img img {
 	width: 100%;
 }
-.overlay-icon-img img{
+
+.overlay-icon-img img {
 	width: 40px;
 	height: 40px;
-
 }
-.overlay-readmore{
-	flex:1;
+
+.overlay-readmore {
+	flex: 1;
 	padding: 0 15px;
 }
-.overlay-readmore a{
+
+.overlay-readmore a {
 	text-decoration: none;
 	color: white;
 	font-size: 14px;
 }
-.overlay-data{
-	height: 180px;
+
+.overlay-data-inner {
+	height: 197px;
 	background-color: #ba0913;
 	color: white;
 	align-items: center;
 }
-.overlay-readmore h1{
+
+.overlay-readmore h1 {
 	margin-bottom: 10px;
 }
-.overlay-readmore p{
+
+.overlay-readmore p {
 	margin-bottom: 10px;
 	line-height: 1.5;
 }
-.overlay-data{
+
+.overlay-data-outer {
 	display: none;
+	animation: fade-in-bottom 0.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
-.data-card:hover .overlay-data{
 
-
+.data-card:hover .overlay-data-outer {
 	display: block;
+	position: relative;
+	bottom: 446px;
+	/* transition: all 0.5s; */;
 }
+
 @media all and (max-width: 768px) {
 	.top-heading {
 		display: none;

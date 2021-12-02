@@ -1,6 +1,6 @@
-$ (document).ready(function(){
-  $(".data-card").hover(function(){
-    $(".overlay-data").slideUp();
-    
-  });
-});
+// $ (document).ready(function(){
+//   $(".data-card").hover(function(){
+//     $(".overlay-data").slideUp();
+//
+//   });
+// });
