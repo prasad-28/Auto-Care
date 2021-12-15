@@ -203,9 +203,9 @@
 	bottom: -3px;
 }
 
-.nav-drop:active {
-	color: #ba0913;
-}
+/* .nav-drop:active {
+	background-color: #ba0913;
+} */
 
 .nav-drop:hover .na-btn-decor {
 	display: block;
@@ -648,20 +648,21 @@
 .wheelwork-area{
 	background-image: url("img/bg-black.jpg");
 	width: 100%;
-	height: 700px;
+	height: 670px;
 	background-size: cover;
+	padding-top: 70px;
 }
 .wheelwork-inner{
-	height: 700px;
+	height: 670px;
 	margin: auto;
 }
 .wheel-left{
-	/* width: 700px; */
+	width: calc(790px - 20px);
 	height: auto;
 	padding-right: 10px;
-	/* background-color: tomato; */
-	/* padding: 0 10px; */
+padding-right: 20px;
 }
+
 .list-inner{
 	width: 176px;
 }
@@ -715,9 +716,9 @@
 	background-color: gray;
 } */
 .wheel-data{
-	width: 370px;
-	height: 290px;
-	padding-left: 10px;
+	 	width: calc( 380px - 10px);
+    height: 290px;
+    padding-left: 20px;
 }
 .wheel-data h3{
 	padding-bottom: 10px;
@@ -729,7 +730,7 @@
 }
 .wheel-right{
 	width: 370px;
-	background-color: #0000007d;
+	background-color: #00000036;
 	color: white;
 
 }
@@ -749,6 +750,7 @@
     align-items: center;
     margin: 10px auto;
 		color: white;
+		transition: all .5s;
 }
 .other-services-h1{
 		height: 55px;
@@ -777,6 +779,17 @@
 	height: 40px;
 	background-size: cover;
 }
+.gallary-outer{
+	height: 700px;
+	margin: auto;
+	background-color: yellow;
+}
+.gallay-inner{
+	background-color: white;
+	height: 620px;
+  margin: auto;
+}
+
 @media all and (max-width: 768px) {
 	.top-heading {
 		display: none;
